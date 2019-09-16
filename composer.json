@@ -1,0 +1,36 @@
+{
+	"name": "sycit/thinkpms",
+	"description": "The ThinkPMS System.",
+	"type": "project",
+	"keywords": [
+		"framework",
+        "thinkpms",
+        "sycit"
+	],
+	"homepage": "http://sycit.cn/",
+	"license" : "MIT",
+	"authors": [
+		{
+			"name": "Peter.Zhang",
+			"email": "hyzwd@outlook.com",
+			"homepage": "http://www.sycit.cn/",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=7.1.0",
+		"sycit/framework": "^1.0.0"
+	},
+	"require-dev": {},
+	"autoload": {
+		"psr-4": {
+			"app\\": "app"
+		},
+		"psr-0": {
+			"": "extend/"
+		}
+	},
+	"config": {
+		"preferred-install": "dist"
+	}
+}
