@@ -13,16 +13,17 @@ namespace app\index\controller;
 
 use app\BaseController;
 
+/**
+ * @Desc 默认控制器
+ */
 class Index extends BaseController
 {
     /**
-     * @desc index
-     *
-     * @Route(method="get",input="name")
-     * @url POST
+     * @Url GET|POST
+     * @Input string $username {10} default="默认用户名称" desc="用户名称" filter="app(app,name)"
      */
     public function index()
     {
-        return 'app::Index->index';
+        return $this->request->get(['username']);
     }
 }

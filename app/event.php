@@ -11,9 +11,11 @@
 
 // 事件定义文件
 return [
+    // 绑定
     'bind'      => [
     ],
 
+    // 监听
     'listen'    => [
         'AppInit'  => [],
         'HttpRun'  => [],
@@ -22,6 +24,7 @@ return [
         'LogWrite' => [],
     ],
 
+    // 订阅
     'subscribe' => [
     ],
 ];

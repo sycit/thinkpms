@@ -13,7 +13,7 @@ return [
     // 绑定到控制器类
     //'a/:name' => '@index',
     // 绑定到命名空间
-    //'a/:name' => ':\app\index\controller',
+    //'user/:name'  => ':app\index\controller',
     // 绑定到类
-    'a/:name' => '\app\index\controller\Index?name=:name&id=:id&pers=asdasd',
+    'a/:name' => '\app\demo\controller\Index?name=:name&id=:id&pers=asdasd',
 ];

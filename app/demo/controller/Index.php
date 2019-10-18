@@ -4,14 +4,19 @@
 // +----------------------------------------------------------------------
 // | Author: Peter.Zhang  <hyzwd@outlook.com>
 // +----------------------------------------------------------------------
-// | Date:   2019/9/6
+// | Date:   2019/9/17
 // +----------------------------------------------------------------------
-// | Title:  Request.php
+// | Title:  Index.php
 // +----------------------------------------------------------------------
 
-namespace app;
+namespace app\demo\controller;
 
-class Request extends \think\Request
+use app\BaseController;
+
+class Index extends BaseController
 {
-
+    public function index()
+    {
+        return __CLASS__;
+    }
 }
