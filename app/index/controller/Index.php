@@ -12,6 +12,7 @@
 namespace app\index\controller;
 
 use app\BaseController;
+use app\index\model\User;
 
 /**
  * @Desc 默认控制器
@@ -20,10 +21,11 @@ class Index extends BaseController
 {
     /**
      * @Url GET|POST
-     * @Input string $username {10} default="默认用户名称" desc="用户名称" filter="app(app,name)"
+     * @Input string $username default="username" desc="用户名称"
      */
     public function index()
     {
-        return $this->request->get(['username']);
+        $data = $this->request->only(['username','password'],'data',['username' => 'www.sycit.cn', 'password'=>'hyzwd@outlook.com'],'string');
+        return $data;
     }
 }
