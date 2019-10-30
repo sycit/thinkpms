@@ -13,8 +13,6 @@
 // | 应用设置
 // +----------------------------------------------------------------------
 
-use think\facade\Env;
-
 return [
     // 是否启用事件
     'with_event'            => true,
@@ -46,4 +44,6 @@ return [
     'auto_response_type'    => [],
     // 强制REST定义(为空不开启),如：'index'=>'GET'
     'route_rest_action'     => [],
+    // 日志记录的模型 未定义统一目录 default
+    'logger_module'         => ['index', 'demo'],
 ];

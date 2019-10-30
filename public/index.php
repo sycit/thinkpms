@@ -12,10 +12,13 @@
 // [ 应用入口文件 ]
 namespace think;
 
-require __DIR__ . '/../vendor/autoload.php';
+// 应用根目录
+$rootPath = dirname(__DIR__) . DIRECTORY_SEPARATOR;
+
+require sprintf("%svendor%sautoload.php", $rootPath, DIRECTORY_SEPARATOR);
 
 // 执行HTTP应用并响应
-$http = (new App())->http;
+$http = (new App($rootPath))->http;
 
 $response = $http->run();
 
